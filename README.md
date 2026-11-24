@@ -49,7 +49,17 @@
 
 ## 安装
 
-在 DSH 里用 **Plugins → Add plugin** 选择本目录，或用 plugin_manager：
+**从插件市场装（推荐）**：DSH 里打开 **插件 → 发现**，搜 `marvis` 或 `马维斯`，
+点安装即可。收录在 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)
+的 `model` 分类，PR 见 [#18525](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/18525)。
+
+**一条命令装**：
+
+```bash
+dsh plugin add github:lehuaner/dsh-connect-marvis
+```
+
+**从源码装**：在 DSH 里用 **Plugins → Add plugin** 选择本目录，或用 plugin_manager：
 
 ```
 install_bundle  →  <本仓库路径>
