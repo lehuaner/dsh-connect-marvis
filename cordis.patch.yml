@@ -1,0 +1,8 @@
+# dsh-marvis bundle patch.
+#
+# 一行 insert 挂载 Host 半身。provider 由 index.js 在 apply() 里
+# 通过 ctx.llm.registerAdapter() 注册。
+- insert:
+    - id: marvis
+      name: 'dsh-marvis'
+      config: {}

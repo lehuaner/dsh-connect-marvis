@@ -1,0 +1,29 @@
+# 依赖
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# 运行时产物：Marvis 登录态缓存（含 refreshToken，绝不能提交）
+.dsh/
+marvis-credentials.json
+*.credentials.json
+
+# 排障落盘：请求体里有完整对话内容
+*.dump.json
+fail-*.json
+req-*.json
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# 探针临时文件
+probe/*.out
+probe/tmp/
+# 腾讯客户端自带的设备指纹组件：不从仓库分发，插件运行时从本机客户端目录自动定位
+native/
+
